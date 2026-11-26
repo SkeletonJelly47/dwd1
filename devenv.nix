@@ -5,6 +5,10 @@
   inputs,
   ...
 }: {
-  languages.javascript.nodejs.enable = true;
+  languages.javascript = {
+    enable = true;
+    npm.enable = true;
+    nodejs.enable = true;
+  };
   languages.python.enable = true;
 }
