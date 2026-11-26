@@ -1,0 +1,4 @@
+docker build -t backend_1_14 -f Dockerfile.backend ..
+docker build -t frontend_1_14 -f Dockerfile.frontend ..
+docker run -d -p 127.0.0.1:8080:8080 backend_1_14
+docker run -d -p 127.0.0.1:5001:5001 frontend_1_14
